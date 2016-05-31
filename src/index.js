@@ -56,9 +56,10 @@ module.exports = function (store) {
       if (this.props.className) {
         className += " " + this.props.className;
       }
+      let contents = this.props.text || this.props.children;
       return <div {...this.props} className={className} size={null} text={null} name={null}>
         <Icon name={this.props.name} size={this.props.size || "small"}/>
-        {this.props.text && <span className="svgicon-text">{this.props.text}</span>}
+        {contents && <span className="svgicon-contents">{contents}</span>}
       </div>;
     }
   }
