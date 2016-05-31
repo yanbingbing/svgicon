@@ -92,14 +92,15 @@ module.exports = function (store) {
         if (this.props.className) {
           className += " " + this.props.className;
         }
+        var contents = this.props.text || this.props.children;
         return React.createElement(
           'div',
           _extends({}, this.props, { className: className, size: null, text: null, name: null }),
           React.createElement(Icon, { name: this.props.name, size: this.props.size || "small" }),
-          this.props.text && React.createElement(
+          contents && React.createElement(
             'span',
-            { className: 'svgicon-text' },
-            this.props.text
+            { className: 'svgicon-contents' },
+            contents
           )
         );
       }

@@ -66,20 +66,18 @@
     max-width: 100%;
     opacity: 0.7;
   }
+  > .svgicon-contents {
+    font-family: @font-family;
+    color: @text-color;
+    font-size: 12px;
+    margin-left: 3px;
+  }
   &:hover, &.active {
     .svgicon {
       opacity: 1;
     }
-    > .svgicon-text {
-      font-size: 12px;
+    > .svgicon-contents {
       color: lighten(@text-color, 10%);
-      font-family: @font-family;
     }
-  }
-  > .svgicon-text {
-    font-size: 12px;
-    font-family: @font-family;
-    color: @text-color;
-    margin-left: 3px;
   }
 }
