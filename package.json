@@ -1,0 +1,22 @@
+{
+  "name": "svgicon",
+  "version": "1.0.0",
+  "description": "Svg Icon for svg2react-loader",
+  "main": "build/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanbingbing/svgicon.git"
+  },
+  "keywords": [
+    "react",
+    "svgicon",
+    "react-svgicon"
+  ],
+  "author": "onbing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanbingbing/svgicon/issues"
+  },
+  "homepage": "https://github.com/yanbingbing/svgicon#readme"
+}
