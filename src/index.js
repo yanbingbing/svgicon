@@ -1,5 +1,6 @@
 require('./index.less');
 const React = require('react');
+const objectAssign = require('object-assign');
 
 function testType(src) {
   let t = typeof src;
@@ -23,7 +24,7 @@ module.exports = function (store) {
         className += " " + this.props.className;
       }
 
-      let props = Object.assign({}, this.props, {
+      let props = objectAssign({}, this.props, {
         className: className,
         size: null,
         name: null
